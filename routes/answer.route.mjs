@@ -1,8 +1,8 @@
 import { Router } from "express";
 import connectionPool from "../utils/db.mjs";
-export const answersRouter = Router();
+export const answerRouter = Router();
 
-answersRouter.post("/:answerId/vote", async (req, res) => {
+answerRouter.post("/:answerId/vote", async (req, res) => {
 
   const answerId = req.params.answerId;
   const { vote } = req.body;
